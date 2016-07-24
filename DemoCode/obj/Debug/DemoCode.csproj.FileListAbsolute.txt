@@ -2,3 +2,7 @@ D:\xUnit Practice\after\AssertingObjectTypes\DemoCode\bin\Debug\DemoCode.dll
 D:\xUnit Practice\after\AssertingObjectTypes\DemoCode\bin\Debug\DemoCode.pdb
 D:\xUnit Practice\after\AssertingObjectTypes\DemoCode\obj\Debug\DemoCode.dll
 D:\xUnit Practice\after\AssertingObjectTypes\DemoCode\obj\Debug\DemoCode.pdb
+C:\NSubXunit\DemoCode\obj\Debug\DemoCode.dll
+C:\NSubXunit\DemoCode\obj\Debug\DemoCode.pdb
+C:\NSubXunit\DemoCode\bin\Debug\DemoCode.dll
+C:\NSubXunit\DemoCode\bin\Debug\DemoCode.pdb
