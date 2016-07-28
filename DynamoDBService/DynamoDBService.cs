@@ -3,6 +3,7 @@ using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.DynamoDBv2.Model;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DynamoDBService
 {
@@ -31,9 +32,27 @@ namespace DynamoDBService
 
             return resp.Item["content"].S;
         }
+        public async Task<string> GetAsyncItem(string attribute)
+        {
+            Task<GetItemResponse> resp = _client.GetItemAsync(
+                    new GetItemRequest
+                    {
+                        TableName = "Activity",
+                        Key = new Dictionary<string, AttributeValue>() { { "cachekey", new AttributeValue { S = "1" } }, },
+                    }
+            );
+            
+            GetItemResponse ret = await resp;
 
-     //   public int UpdateItem(T item) { return 0; }
-     //   public int DeleteItem(T item) { return 0; }
+            if (ret == null) { return null; }
+            if (ret.Item == null) { return null; }
+            if (ret.Item == null) { return null; }
+
+            return ret.Item["content"].S;
+        }
+
+        //   public int UpdateItem(T item) { return 0; }
+        //   public int DeleteItem(T item) { return 0; }
 
         public List<string> GetTables()
         {

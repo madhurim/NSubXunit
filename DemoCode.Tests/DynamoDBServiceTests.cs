@@ -29,8 +29,12 @@ namespace DemoCode.Tests
             
             dynamoDBService.GetClient().Returns<AmazonDynamoDBClient>(new AmazonDynamoDBClient(key1,key2,config));
             dynamoDBService.GetItem(Arg.Any<string>()).Returns<string>("activity");
-           
+                      
             dynamoDBService.GetItem("test null").Returns<string>(x => null);
+
+            dynamoDBService
+               .GetAsyncItem(Arg.Any<string>())
+               .Returns(Task.FromResult<string>("async"));
 
             //subject under test
             serviceCaller = new DynamoDBCaller(dynamoDBService);
@@ -81,6 +85,34 @@ namespace DemoCode.Tests
         {
             var actual = serviceCaller.GetItem("test null");
             Assert.Equal(null, actual);
+        }
+        [Fact]
+        public void DoesAsyncReturnTheDesiredResult()
+        {
+            // this test is only to understand syntax. Actual syntax is not that useful.
+            var result = String.Empty;
+            var task = dynamoDBService.GetAsyncItem("test async");
+            task.Wait();
+            result = task.Result;
+
+            var expected = "async";
+
+            Assert.Equal(expected, result);
+
+        }
+        [Fact]
+        public void DoesAsyncFormatTheResult()
+        {
+            // this test is only to understand syntax. Actual syntax is not that useful.
+            var result = String.Empty;
+            var task = serviceCaller.GetAsyncItem("test async");
+            task.Wait();
+            result = task.Result;
+
+            var expected = "This is the string returned from AWS async";
+
+            Assert.Equal(expected, result);
+
         }
     }
 }

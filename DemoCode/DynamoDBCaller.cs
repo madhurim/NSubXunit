@@ -3,6 +3,7 @@ using DynamoDBService;
 using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
+using System.Threading.Tasks;
 
 namespace DemoCode
 {
@@ -29,8 +30,22 @@ namespace DemoCode
 
            val = "This is the string returned from AWS " + val;
 
-            return val;
+           return val;
             
+        }
+        public async Task<string> GetAsyncItem(string attribute)
+        {
+
+            Task<string> val = _dbservice.GetAsyncItem(attribute);
+
+            string ret = await val;
+
+            if (ret == null) return null;
+
+            ret = "This is the string returned from AWS " + ret;
+
+            return ret;
+
         }
     }
 }
