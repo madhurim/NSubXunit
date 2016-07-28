@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AWSSDK.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.Core.3.1.9.0\lib\net45\AWSSDK.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AWSSDK.DynamoDBv2, Version=3.1.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.DynamoDBv2.3.1.5.2\lib\net45\AWSSDK.DynamoDBv2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,6 +50,7 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="CalculatorView.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="DynamoDBCaller.cs" />
     <Compile Include="Garage.cs" />
     <Compile Include="Interfaces\IAsyncRepository.cs" />
     <Compile Include="Interfaces\ICreate.cs" />
@@ -52,6 +61,18 @@
     <Compile Include="NumberRepositoy.cs" />
     <Compile Include="NumbersDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynamoDBService\DynamoDBService.csproj">
+      <Project>{e9ad5c5c-a261-44f3-a21f-92e135465d10}</Project>
+      <Name>DynamoDBService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\AWSSDK.DynamoDBv2.3.1.5.2\analyzers\dotnet\cs\AWSSDK.DynamoDBv2.CodeAnalysis.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

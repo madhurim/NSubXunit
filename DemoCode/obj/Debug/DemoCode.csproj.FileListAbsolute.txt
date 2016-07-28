@@ -2,7 +2,16 @@ D:\xUnit Practice\after\AssertingObjectTypes\DemoCode\bin\Debug\DemoCode.dll
 D:\xUnit Practice\after\AssertingObjectTypes\DemoCode\bin\Debug\DemoCode.pdb
 D:\xUnit Practice\after\AssertingObjectTypes\DemoCode\obj\Debug\DemoCode.dll
 D:\xUnit Practice\after\AssertingObjectTypes\DemoCode\obj\Debug\DemoCode.pdb
-C:\NSubXunit\DemoCode\obj\Debug\DemoCode.dll
-C:\NSubXunit\DemoCode\obj\Debug\DemoCode.pdb
+C:\NSubXunit\DemoCode\obj\Debug\DemoCode.csprojResolveAssemblyReference.cache
 C:\NSubXunit\DemoCode\bin\Debug\DemoCode.dll
 C:\NSubXunit\DemoCode\bin\Debug\DemoCode.pdb
+C:\NSubXunit\DemoCode\bin\Debug\AWSSDK.Core.dll
+C:\NSubXunit\DemoCode\bin\Debug\AWSSDK.DynamoDBv2.dll
+C:\NSubXunit\DemoCode\bin\Debug\DynamoDBService.dll
+C:\NSubXunit\DemoCode\bin\Debug\DynamoDBService.pdb
+C:\NSubXunit\DemoCode\bin\Debug\AWSSDK.Core.pdb
+C:\NSubXunit\DemoCode\bin\Debug\AWSSDK.Core.xml
+C:\NSubXunit\DemoCode\bin\Debug\AWSSDK.DynamoDBv2.pdb
+C:\NSubXunit\DemoCode\bin\Debug\AWSSDK.DynamoDBv2.xml
+C:\NSubXunit\DemoCode\obj\Debug\DemoCode.dll
+C:\NSubXunit\DemoCode\obj\Debug\DemoCode.pdb
