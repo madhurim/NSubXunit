@@ -16,6 +16,7 @@ namespace DemoCode.Tests
     public class DynamoDBServiceTests
     {
         IDynamoDBService dynamoDBService;
+        IDynamoView mockView;
         DynamoDBCaller serviceCaller;
 
         public DynamoDBServiceTests()
@@ -36,8 +37,14 @@ namespace DemoCode.Tests
                .GetAsyncItem(Arg.Any<string>())
                .Returns(Task.FromResult<string>("async"));
 
+            //mock - we will make asserts on it
+            mockView = Substitute.For<IDynamoView>();
+            DisplayData data = new DisplayData();
+            data.Editable = true;
+            mockView.DisplayView = data;
+
             //subject under test
-            serviceCaller = new DynamoDBCaller(dynamoDBService);
+            serviceCaller = new DynamoDBCaller(dynamoDBService, mockView);
         }
         [Fact]
         public void DoesTheCallerCallGetClient()
@@ -97,7 +104,7 @@ namespace DemoCode.Tests
 
             var expected = "async";
 
-            Assert.Equal(expected, result);
+            Assert.Equal( expected, result );
 
         }
         [Fact]
@@ -111,7 +118,19 @@ namespace DemoCode.Tests
 
             var expected = "This is the string returned from AWS async";
 
-            Assert.Equal(expected, result);
+            Assert.Equal( expected, result );
+
+        }
+        [Fact]
+        public void DoesDisplayMockGetUpdated()
+        {
+            // this test is only to understand syntax. Actual syntax is not that useful.
+            serviceCaller.Display();            
+           
+            var expected = "This is the string returned from AWS activity This is editable data ";
+            //the service called changes the mock when it's editable
+            //assert on the mock
+            Assert.Equal(expected, mockView.DisplayView.DisplayView);
 
         }
     }

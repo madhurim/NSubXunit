@@ -10,6 +10,7 @@ namespace DemoCode
     {
         int Sum { get; set; }
         
+        
         void DisplaySum(int addition);
     }
 }

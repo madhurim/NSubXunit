@@ -49,8 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DisplayData.cs" />
     <Compile Include="DynamoDBService.cs" />
+    <Compile Include="DynamoView.cs" />
     <Compile Include="IDynamoDBService.cs" />
+    <Compile Include="IDynamoView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
