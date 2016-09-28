@@ -1,4 +1,3 @@
-D:\Git-SourceTree\UnitTesting\NSubstituteCalculator\obj\Debug\NSubstituteCalculator.csprojResolveAssemblyReference.cache
 D:\Git-SourceTree\UnitTesting\NSubstituteCalculator\bin\NSubstituteCalculator.dll.config
 D:\Git-SourceTree\UnitTesting\NSubstituteCalculator\bin\NSubstituteCalculator.dll
 D:\Git-SourceTree\UnitTesting\NSubstituteCalculator\bin\NSubstituteCalculator.pdb

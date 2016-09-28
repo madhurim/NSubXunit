@@ -11,7 +11,7 @@ namespace NSubstituteCalculatorTest
         [Fact]
         public void TestMethod1()
         {
-            // Verifying the add functionality using assert
+            // Verifying the add functionality using stub assert
             var calculator = Substitute.For<Calculator>();
             int sum = calculator.Add(1, 2);
             var result = false;
