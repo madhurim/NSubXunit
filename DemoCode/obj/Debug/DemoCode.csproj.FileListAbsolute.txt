@@ -15,3 +15,16 @@ C:\NSubXunit\DemoCode\bin\Debug\AWSSDK.DynamoDBv2.pdb
 C:\NSubXunit\DemoCode\bin\Debug\AWSSDK.DynamoDBv2.xml
 C:\NSubXunit\DemoCode\obj\Debug\DemoCode.dll
 C:\NSubXunit\DemoCode\obj\Debug\DemoCode.pdb
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\DemoCode.dll
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\DemoCode.pdb
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\AWSSDK.Core.dll
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\AWSSDK.DynamoDBv2.dll
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\DynamoDBService.dll
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\DynamoDBService.pdb
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\AWSSDK.Core.pdb
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\AWSSDK.Core.xml
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\AWSSDK.DynamoDBv2.pdb
+D:\Git-SourceTree\UnitTesting\DemoCode\bin\Debug\AWSSDK.DynamoDBv2.xml
+D:\Git-SourceTree\UnitTesting\DemoCode\obj\Debug\DemoCode.csprojResolveAssemblyReference.cache
+D:\Git-SourceTree\UnitTesting\DemoCode\obj\Debug\DemoCode.dll
+D:\Git-SourceTree\UnitTesting\DemoCode\obj\Debug\DemoCode.pdb
